@@ -1,7 +1,21 @@
+.container{
+  font-weight: bold;
+  font-style: italic;
+}
+
 h1{
   text-align: center;
   color: blue;
   text-shadow:  5px 5px #558ABB;
   font-style: italic;
   font-weight: bold;
+}
+
+p{
+  text-align: center;
+  text-decoration: underline;
+}
+
+h3{
+  text-decoration: underline;
 }
