@@ -27,3 +27,12 @@ h4{
 .container{
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/31/Pass_pigs_dice.jpg");
 }
+
+h2{
+  text-decoration: underline;
+  font-family: cursive;
+}
+
+p{
+  color: orange;
+}
