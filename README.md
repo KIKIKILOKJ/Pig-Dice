@@ -13,7 +13,8 @@
 -Once you hold the points you have will be added to the previous score.
 -Upon attaining 100 points, you win the game.
 
-##|BEHAVIOUR|INPUT|OUTPUT|
+##BDD  
+  |BEHAVIOUR|INPUT|OUTPUT|
   |--------:|-----:|-----:|
   |Players|Click play|Appearance of the section for the players|
   |Player 1|rolls the dice|Total points gained appears|
