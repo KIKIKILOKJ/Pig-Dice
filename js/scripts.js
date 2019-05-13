@@ -36,10 +36,18 @@ Player.prototype.roll1 = function () {
 }
 
 Player.prototype.hold = function (){
-  this.score += this.score;
-  this.total =o;
+  this.total += this.score;
+  this.score =o;
   this.changeturn ();
+  return this.total;
 }
+
+$(document).ready(function(){
+$("button#hold1").click(function(){
+  $(".score1").text(player1.hold())
+  alert("Next Player")
+
+})
 
 Player.prototype.changeturn = function (){
   if(this.roll===1) {
@@ -56,11 +64,5 @@ Player.prototype.winnerCheck = function () {
   }
 }
 
-$("button#hold1").click(function(){
-  playing.hold1();
-  $(".total1").text(player1.total1);
-  $(".score1").empty();
-  $(".playing").empty();
-  player.winnerCheck();
-})
 });
+})
