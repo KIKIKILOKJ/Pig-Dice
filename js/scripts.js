@@ -4,9 +4,19 @@ $(document).ready(function(){
     })
 });
 
-var throwdice = function () {
+function throwDice() {
   return Math.floor(6*Math.random ()) + 1;
 }
+$(document).ready(function() {
+$("button#roll1").click(function(){
+  roll1 = throwDice();
+  $(".player1").text(roll1);
+});
+
+$("button#roll2").click(function() {
+  roll2 = throwDice();
+  $(".player2").text(roll2);
+});
 
 function Player (turn) {
   this.roll = 0;
@@ -45,3 +55,12 @@ Player.prototype.winnerCheck = function () {
     alert(" You are the winner!!");
   }
 }
+
+$("button#hold1").click(function(){
+  playing.hold1();
+  $(".total1").text(player1.total1);
+  $(".score1").empty();
+  $(".playing").empty();
+  player.winnerCheck();
+})
+});
